@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<title>Castelinho Food — Peça pelo WhatsApp</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--ink:#171717;--muted:#707070;--line:#e8e8e8;--accent:#f0b90b;--accent2:#111;--green:#1fb768;--danger:#dc3545;--soft:#fff8df;}
+*{box-sizing:border-box}html,body{margin:0;width:100%;max-width:100%;overflow-x:hidden;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer;border:0}.app{min-height:100vh}.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.top-inner{max-width:1100px;margin:auto;padding:14px 18px 12px}.brand-row{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:11px}.logo{width:48px;height:48px;border-radius:15px;background:#111;color:#f0b90b;display:grid;place-items:center;font-size:25px;font-weight:900;box-shadow:0 5px 16px #0001}.brand h1{font-size:18px;margin:0;font-weight:900}.brand small{color:var(--muted);display:block;margin-top:2px}.owner-btn{background:#f2f2f2;color:#222;border-radius:12px;padding:10px 13px;font-weight:700}.hero{max-width:1100px;margin:0 auto;padding:24px 18px 12px}.hero-card{background:#111;color:#fff;border-radius:24px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:20px;overflow:hidden}.hero-card h2{font-size:clamp(28px,5vw,46px);line-height:1;margin:0 0 10px}.hero-card p{color:#ddd;margin:0;max-width:610px}.hero-badge{display:inline-flex;background:var(--accent);color:#111;font-weight:900;border-radius:999px;padding:8px 12px;margin-bottom:12px}.hero-art{font-size:75px;min-width:120px;text-align:center}.search{max-width:1100px;margin:0 auto;padding:8px 18px 16px}.search input{width:100%;padding:15px 17px;border:1px solid var(--line);border-radius:15px;background:#fff;outline:none}.search input:focus{border-color:#bbb;box-shadow:0 0 0 4px #f0b90b22}.layout{max-width:1100px;margin:auto;padding:0 18px 120px}.categories{display:flex;gap:8px;overflow:auto;padding:6px 0 16px;scrollbar-width:none}.categories::-webkit-scrollbar{display:none}.cat{white-space:nowrap;padding:10px 15px;border-radius:999px;background:#fff;border:1px solid var(--line);color:#555;font-weight:700}.cat.active{background:#111;color:#fff;border-color:#111}.section{margin:16px 0 28px}.section-title{font-size:25px;margin:0 0 12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;flex-direction:column;min-width:0;box-shadow:0 3px 12px #00000008}.product-top{display:flex;justify-content:space-between;gap:12px}.product-image{width:100%;height:150px;object-fit:cover;border-radius:14px;margin-bottom:10px;background:#f3f3f3;display:block}.product-icon{width:58px;height:58px;flex:0 0 58px;border-radius:16px;background:var(--soft);display:grid;place-items:center;font-size:30px}.product h3{font-size:17px;line-height:1.2;margin:0 0 6px}.desc{color:var(--muted);font-size:14px;line-height:1.35;min-height:38px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:15px}.price{font-size:20px;font-weight:900}.sold{font-size:12px;font-weight:800;background:#eee;color:#777;padding:6px 9px;border-radius:999px}.add{background:#111;color:#fff;border-radius:11px;padding:9px 13px;font-weight:900}.qty-card{display:flex;align-items:center;gap:8px;background:#111;color:#fff;border-radius:11px;padding:5px}.qty-card button{width:32px;height:32px;border-radius:8px;background:#fff;color:#111;font-weight:900;font-size:20px;line-height:1}.qty-card b{min-width:24px;text-align:center;font-size:16px}.add:disabled{background:#ddd;color:#888;cursor:not-allowed}.empty{background:#fff;border:1px dashed #ccc;border-radius:18px;padding:30px;text-align:center;color:var(--muted)}.cart-bar{position:fixed;z-index:30;left:50%;bottom:14px;transform:translateX(-50%);width:min(680px,calc(100% - 24px));background:#111;color:#fff;border-radius:18px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 12px 35px #0004}.cart-info strong{display:block}.cart-info span{color:#ccc;font-size:13px}.cart-actions{display:flex;gap:8px}.secondary{background:#2c2c2c;color:#fff;padding:11px 13px;border-radius:11px;font-weight:800}.primary{background:var(--accent);color:#111;padding:11px 14px;border-radius:11px;font-weight:900}.modal-back{position:fixed;inset:0;background:#0008;z-index:100;display:none;align-items:flex-end;justify-content:center;padding:10px}.modal-back.show{display:flex}.modal{background:#fff;width:min(700px,100%);max-height:90vh;overflow:auto;border-radius:22px;padding:20px}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.close{width:38px;height:38px;border-radius:50%;background:#f1f1f1}.order-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 0;border-bottom:1px solid var(--line)}.qty{display:flex;align-items:center;gap:8px}.qty button{width:30px;height:30px;border-radius:9px;background:#eee;font-weight:900}.form label{font-size:13px;font-weight:800;display:block;margin:14px 0 6px}.form input,.form textarea,.form select{width:100%;padding:12px 13px;border:1px solid #ddd;border-radius:11px;outline:none;background:#fff}.total{font-size:22px;font-weight:900;text-align:right;margin:16px 0}.wa{width:100%;padding:14px;border-radius:13px;background:#1fb768;color:#fff;font-weight:900}.admin-shell{max-width:1100px;margin:auto;padding:25px 18px 70px}.admin-head{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:20px}.admin-tabs{display:flex;gap:8px;overflow:auto;margin-bottom:15px}.tab{padding:10px 14px;border-radius:10px;background:#eee;font-weight:800;white-space:nowrap}.tab.active{background:#111;color:#fff}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px}.panel h3{margin-top:0}.admin-item{display:grid;grid-template-columns:1fr auto;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.admin-item:last-child{border-bottom:0}.admin-actions{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.mini{padding:8px 10px;border-radius:9px;background:#eee;font-weight:800}.mini.danger{background:#ffe9eb;color:#b42332}.mini.off{background:#fff3d1}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.stat{background:#fafafa;border:1px solid var(--line);border-radius:14px;padding:15px}.stat b{font-size:25px;display:block}.login-wrap{min-height:100vh;display:grid;place-items:center;padding:20px}.login{width:min(450px,100%);background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 12px 40px #0001}.notice{background:#fff8df;border:1px solid #f2d56a;border-radius:12px;padding:12px;font-size:13px;color:#5c4b00}.footer{text-align:center;color:#888;font-size:13px;padding:30px 15px}
+.selection-summary{display:flex;justify-content:space-between;align-items:center;background:#fff8df;border:1px solid #f2d56a;border-radius:12px;padding:12px 14px;margin:14px 0;font-size:14px}
+.flavor-list{border-top:1px solid var(--line)}
+.flavor-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.flavor-name{font-weight:700;font-size:15px}
+.flavor-qty{display:flex;align-items:center;gap:8px}
+.flavor-qty button{width:34px;height:34px;border-radius:9px;background:#f1f1f1;font-size:21px;font-weight:900}
+.flavor-qty b{min-width:22px;text-align:center}
+.snack-modal textarea{width:100%;padding:12px 13px;border:1px solid #ddd;border-radius:11px;resize:vertical;outline:none}
+.snack-modal .wa:disabled{background:#ddd;color:#888;cursor:not-allowed}
+.hidden{display:none!important}@media(max-width:720px){.hero-card{padding:20px}.hero-art{display:none}.grid{grid-template-columns:1fr}.cart-bar{bottom:8px}.admin-item{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.brand small{font-size:11px}.owner-btn{padding:9px 10px;font-size:12px}}
+</style>
+</head>
+<body>
+<div id="app" class="app"></div>
+<script>
+const WA='5518996329176';
+const seed=[
+ {cat:'Box de salgadinhos',name:'Box 20 salgadinhos',desc:'Salgadinhos fritos, sequinhos e saborosos.',price:19.99,icon:'🥟'},
+ {cat:'Box de salgadinhos',name:'Box 40 salgadinhos',desc:'Salgados fritos tamanho festa.',price:39.99,icon:'🥟'},
+ {cat:'Box de salgadinhos',name:'Box de 50 salgadinhos',desc:'Sequinhos e saborosos.',price:49.99,icon:'🥟'},
+ {cat:'Box de salgadinhos',name:'Box 60 salgadinhos',desc:'Porção caprichada para compartilhar.',price:59.99,icon:'🥟'},
+ {cat:'Box de salgadinhos',name:'Boxes 70 salgadinhos',desc:'Sequinhos e saborosos.',price:69.99,icon:'🥟'},
+ {cat:'Box de salgadinhos',name:'Box de 100',desc:'Sequinhos e saborosos para festas e reuniões.',price:96.99,icon:'🥟'},
+ {cat:'Combos',name:'Combinação perfeita',desc:'40 salgados + Coca-Cola 2L.',price:49.99,icon:'🍟'},
+ {cat:'Combos',name:'Combo castelinho segundo top',desc:'30 salgados + Guaraná Kuat 2 litros.',price:35.99,icon:'🍟'},
+ {cat:'Combos',name:'Combo coca cola 1L',desc:'30 salgadinhos + Coca-Cola 1L.',price:39.99,icon:'🥤'},
+ {cat:'Combos',name:'Combo coca cola 2L',desc:'50 salgadinhos + Coca-Cola 2L.',price:61.99,icon:'🥤'},
+ {cat:'Combos',name:'Combo Fanta uva 2L',desc:'30 salgados + Fanta Uva 2L.',price:39.99,icon:'🥤'},
+ {cat:'Combos',name:'Combo funada Guaraná 2 litros',desc:'50 salgados + Guaraná Funada 2 litros.',price:55.99,icon:'🥤'},
+ {cat:'Combos',name:'Combo junta galera',desc:'100 salgados + Coca-Cola 2L.',price:109.99,icon:'🎉'},
+ {cat:'Combos',name:'Combo Kuat 2 litros',desc:'70 salgadinhos + Kuat 2 litros.',price:75.99,icon:'🥤'},
+ {cat:'Combos',name:'Combo Sprite',desc:'40 salgados + Sprite 2 litros.',price:49.99,icon:'🥤'},
+ {cat:'Combos',name:'Combo Tubaína',desc:'60 salgados + Tubaína.',price:69.99,icon:'🥤'},
+ {cat:'Combos',name:'Combo Hexa 120 Salgadinhos + coca 2 ltr + Guaraná 2 ltr',desc:'Combo grande para a galera.',price:145.99,icon:'🏆'},
+ {cat:'Combos',name:'Combo Hexa 30 salgadinhos + 1 guaraná Antarctica de 1L',desc:'30 salgados + Guaraná Antarctica 1L.',price:35.99,icon:'🏆'},
+ {cat:'Combos',name:'Combo Vai Brasil 70 Salgados + 1 guarana Antarctica 2 litros',desc:'70 salgados + Guaraná Antarctica 2L.',price:79.99,icon:'🇧🇷'},
+ {cat:'Combos',name:'Combo 20 Salgadinhos + Coca-Cola 600ml',desc:'20 salgadinhos + Coca-Cola 600ml.',price:27.99,icon:'🥤'},
+ {cat:'Combos',name:'Combo 25 salgadinhos + 1 coca lata',desc:'Combo prático para matar a fome.',price:0,icon:'🥤'},
+ {cat:'Refrigerantes',name:'Coca-Cola 1L',desc:'Garrafa 1L.',price:10,icon:'🥤'},
+ {cat:'Refrigerantes',name:'Coca-Cola 350ml Zero Açúcar',desc:'Refrigerante Coca-Cola 350ml sem açúcar.',price:6,icon:'🥤'},
+ {cat:'Refrigerantes',name:'Fanta Laranja 2L',desc:'Garrafa 2L.',price:12,icon:'🥤'},
+ {cat:'Refrigerantes',name:'Fanta Uva 2L',desc:'Garrafa 2L.',price:12,icon:'🥤'},
+ {cat:'Refrigerantes',name:'Refrigerante Guaraná Antárctica 1L',desc:'Garrafa 1L.',price:8,icon:'🥤'},
+ {cat:'Refrigerantes',name:'Refrigerante Original Garrafa Coca-Cola 2L',desc:'Garrafa 2L.',price:16,icon:'🥤'},
+ {cat:'Refrigerantes',name:'Refrigerante Tubaina Funada 2L',desc:'Garrafa 2L.',price:10,icon:'🥤'},
+ {cat:'Refrigerantes',name:'Sprite Original 2L',desc:'Garrafa 2L.',price:12,icon:'🥤'},
+];
+let products=JSON.parse(localStorage.getItem('cf_products')||'null')||seed.map((x,i)=>({...x,id:i+1,active:true}));
+let cart=JSON.parse(localStorage.getItem('cf_cart')||'{}');
+let currentCat='Todos', query='';
+const money=v=>v?new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(v):'Consultar';
+function save(){localStorage.setItem('cf_products',JSON.stringify(products));localStorage.setItem('cf_cart',JSON.stringify(cart));}
+function renderStore(){
+ const cats=['Todos',...new Set(products.map(p=>p.cat))];
+ const filtered=products.filter(p=>p.active && (currentCat==='Todos'||p.cat===currentCat) && (p.name+' '+p.desc).toLowerCase().includes(query.toLowerCase()));
+ let html=`<header class="top"><div class="top-inner"><div class="brand-row"><div class="brand"><div class="logo">CF</div><div><h1>Castelinho Food</h1><small>Peça seus salgadinhos direto pelo WhatsApp</small></div></div><button class="owner-btn" onclick="showOwner()">⚙ Área do dono</button></div></div></header>
+ <section class="hero"><div class="hero-card"><div><span class="hero-badge">🔥 Peça online</span><h2>Seu pedido, do seu jeito.</h2><p>Escolha os salgados e combos, monte seu pedido e, nos boxes, distribua a quantidade entre os sabores que quiser antes de enviar tudo pronto para o WhatsApp do Castelinho Food.</p></div><div class="hero-art">🥟</div></div></section>
+ <div class="search"><input id="search" value="${esc(query)}" placeholder="🔎 Buscar no cardápio" oninput="query=this.value;renderStore()"></div>
+ <main class="layout"><div class="categories">${cats.map(c=>`<button class="cat ${currentCat===c?'active':''}" onclick="currentCat=${JSON.stringify(c)};renderStore()">${esc(c)}</button>`).join('')}</div>`;
+ for(const cat of cats.filter(c=>c!=='Todos')){
+   if(currentCat!=='Todos'&&currentCat!==cat) continue;
+   const arr=filtered.filter(p=>p.cat===cat); if(!arr.length) continue;
+   html+=`<section class="section"><h2 class="section-title">${esc(cat)}</h2><div class="grid">${arr.map(p=>productHTML(p)).join('')}</div></section>`;
+ }
+ if(!filtered.length) html+=`<div class="empty">Nenhum item disponível nessa busca ou categoria.</div>`;
+ html+=`</main><div class="footer">Castelinho Food • Pedido online • WhatsApp ${WA.replace(/^55/,'(55) ')}</div>`;
+ document.getElementById('app').innerHTML=html+cartBar();
+}
+function productHTML(p){const q=cart[p.id]?.qty||0; const action=q?`<div class="qty-card"><button aria-label="Diminuir" onclick="cardQty(${p.id},-1)">−</button><b>${q}</b><button aria-label="Aumentar" onclick="cardQty(${p.id},1)">+</button></div>`:`<button class="add" ${p.price<=0?'disabled':''} onclick="addProductToCart(products.find(x=>x.id===${p.id}))">${boxSize(p)?'Escolher sabores':'Adicionar'}</button>`; const media=p.image?`<img class="product-image" src="${esc(p.image)}" alt="${esc(p.name)}">`:`<div class="product-icon">${p.icon||'🥟'}</div>`; return `<article class="product">${media}<div class="product-top"><div><h3>${esc(p.name)}</h3><div class="desc">${esc(p.desc)}</div></div></div><div class="price-row"><span class="price">${money(p.price)}</span>${action}</div></article>`}
+function cartBar(){const n=Object.values(cart).reduce((a,x)=>a+x.qty,0),total=Object.values(cart).reduce((a,x)=>a+x.qty*x.price,0);if(!n)return '';return `<div class="cart-bar"><div class="cart-info"><strong>${n} ${n===1?'item':'itens'} • ${money(total)}</strong><span>Pedido pronto para revisar</span></div><div class="cart-actions"><button class="secondary" onclick="openCart()">Ver pedido</button><button class="primary" onclick="openCart(true)">Finalizar</button></div></div>`}
+
+const snackFlavors = [
+  'Coxinha de frango catu',
+  'Coxinha de carne queijo',
+  'Bolinha de queijo',
+  'Disco calabresa queijo',
+  'Bolinha de pizza',
+  'Enrolado salsicha',
+  'Risoles milho e queijo',
+  'Risoles de carne',
+  'Risoles frango cremoso',
+  'Risoles presunto queijo',
+  'Kibe tradicional',
+  'Kibe queijo'
+];
+
+let snackFlavorAvailability = JSON.parse(localStorage.getItem('cf_snack_flavors') || 'null');
+if(!snackFlavorAvailability || typeof snackFlavorAvailability !== 'object'){
+  snackFlavorAvailability = {};
+}
+snackFlavors.forEach(f => {
+  if (snackFlavorAvailability[f] !== true && snackFlavorAvailability[f] !== false) snackFlavorAvailability[f] = true;
+});
+localStorage.setItem('cf_snack_flavors', JSON.stringify(snackFlavorAvailability));
+function saveSnackFlavorAvailability(){
+  localStorage.setItem('cf_snack_flavors', JSON.stringify(snackFlavorAvailability));
+}
+function availableSnackFlavors(){
+  return snackFlavors.filter(f => snackFlavorAvailability[f] === true);
+}
+
+function boxSize(p){
+  const m = String(p.name||'').match(/Box(?:es)?\s*(?:de\s*)?(\d+)/i);
+  return m ? Number(m[1]) : null;
+}
+
+function addProductToCart(p){
+  const size = boxSize(p);
+  if(size){
+    openSnackCustomizer(p.id);
+    return;
+  }
+  addToCart(p.id);
+}
+
+function openSnackCustomizer(productId){
+  const p = products.find(x=>x.id===productId);
+  const size = boxSize(p);
+  if(!p || !size || p.price<=0) return;
+
+  const existing = Object.values(cart).find(i => i.customBox && i.productId===p.id);
+  const selected = {};
+  if(existing && existing.flavors){
+    Object.entries(existing.flavors).forEach(([name, qty]) => selected[name] = qty);
+  }
+
+  const availableFlavors = availableSnackFlavors();
+  const rows = availableFlavors.map((f,idx)=>`
+    <div class="flavor-row">
+      <div class="flavor-name">${esc(f)}</div>
+      <div class="flavor-qty">
+        <button type="button" onclick="flavorQty(${idx},-1)">−</button>
+        <b id="flavorQty${idx}">${selected[f]||0}</b>
+        <button type="button" onclick="flavorQty(${idx},1)">+</button>
+      </div>
+    </div>`).join('');
+
+  window.snackDraft = {productId, size, selected};
+  document.body.insertAdjacentHTML('beforeend', `
+    <div class="modal-back show" id="snackModal">
+      <div class="modal snack-modal">
+        <div class="modal-head">
+          <div>
+            <h2 style="margin-bottom:4px">${esc(p.name)}</h2>
+            <div style="color:#777">Escolha exatamente ${size} salgados.</div>
+          </div>
+          <button class="close" onclick="closeSnackModal()">✕</button>
+        </div>
+        <div class="selection-summary">
+          <strong><span id="flavorTotal">0</span> / ${size}</strong>
+          <span id="flavorRemaining">Faltam ${size}</span>
+        </div>
+        <div class="flavor-list">${rows || '<div class="empty" style="margin:12px 0">Nenhum sabor está disponível no momento. O dono precisa liberar pelo painel.</div>'}</div>
+        <label style="font-size:13px;font-weight:800;display:block;margin:15px 0 6px">Alguma observação? (opcional)</label>
+        <textarea id="snackNote" rows="2" placeholder="Ex.: separar os sabores em partes..."></textarea>
+        <button class="wa" id="addSnackBtn" disabled onclick="confirmSnackBox(${p.id})">Adicionar box ao pedido</button>
+      </div>
+    </div>`);
+  updateFlavorSummary();
+}
+
+function flavorQty(index, delta){
+  if(!window.snackDraft) return;
+  const name = availableSnackFlavors()[index];
+  const current = window.snackDraft.selected[name] || 0;
+  const total = Object.values(window.snackDraft.selected).reduce((a,b)=>a+b,0);
+  const next = Math.max(0, current + delta);
+  if(delta > 0 && total >= window.snackDraft.size) return;
+  window.snackDraft.selected[name] = next;
+  document.getElementById('flavorQty'+index).textContent = next;
+  updateFlavorSummary();
+}
+
+function updateFlavorSummary(){
+  if(!window.snackDraft) return;
+  const total = Object.values(window.snackDraft.selected).reduce((a,b)=>a+b,0);
+  const size = window.snackDraft.size;
+  const remaining = size-total;
+  const totalEl = document.getElementById('flavorTotal');
+  const remEl = document.getElementById('flavorRemaining');
+  const btn = document.getElementById('addSnackBtn');
+  if(totalEl) totalEl.textContent = total;
+  if(remEl) remEl.textContent = remaining===0 ? 'Quantidade completa ✓' : `Faltam ${remaining}`;
+  if(btn){
+    btn.disabled = total !== size;
+    btn.textContent = total===size ? 'Adicionar box ao pedido' : `Escolha mais ${Math.max(0,remaining)} salgado${remaining===1?'':'s'}`;
+  }
+}
+
+function closeSnackModal(){
+  document.getElementById('snackModal')?.remove();
+  window.snackDraft = null;
+}
+
+function confirmSnackBox(productId){
+  if(!window.snackDraft) return;
+  const p = products.find(x=>x.id===productId);
+  const total = Object.values(window.snackDraft.selected).reduce((a,b)=>a+b,0);
+  if(!p || total !== window.snackDraft.size) return;
+
+  const flavors = {};
+  Object.entries(window.snackDraft.selected).forEach(([name,qty])=>{ if(qty>0) flavors[name]=qty; });
+  const note = document.getElementById('snackNote')?.value.trim() || '';
+  const key = 'box-' + productId + '-' + Date.now();
+  cart[key] = {
+    id:key, qty:1, name:p.name, price:p.price,
+    customBox:true, productId:p.id, flavors, note
+  };
+  save();
+  closeSnackModal();
+  renderStore();
+}
+
+function addToCart(id){const p=products.find(x=>x.id===id);if(!p||!p.active||p.price<=0)return;cart[id]=cart[id]?{...cart[id],qty:cart[id].qty+1}:{id,qty:1,name:p.name,price:p.price};save();renderStore()}
+function cardQty(id,d){const p=products.find(x=>x.id===id);if(!p||!p.active||p.price<=0)return;if(!cart[id])cart[id]={id,qty:0,name:p.name,price:p.price};cart[id].qty+=d;if(cart[id].qty<=0)delete cart[id];save();renderStore()}
+function changeQty(id,d){if(!cart[id])return;cart[id].qty+=d;if(cart[id].qty<=0)delete cart[id];save();closeModal();renderStore();if(Object.keys(cart).length)openCart()}
+function openCart(auto=false){
+ const items=Object.values(cart),total=items.reduce((a,x)=>a+x.qty*x.price,0);
+ document.body.insertAdjacentHTML('beforeend',`<div class="modal-back show" id="modal"><div class="modal"><div class="modal-head"><h2>Seu pedido</h2><button class="close" onclick="closeModal()">✕</button></div>${items.length?items.map(i=>`<div class="order-item"><div><b>${esc(i.name)}</b><div>${money(i.price)} cada</div>${i.customBox?`<div style="margin-top:6px;color:#555;font-size:13px"><b>Sabores:</b> ${Object.entries(i.flavors||{}).map(([n,q])=>`${q}x ${esc(n)}`).join(', ')}${i.note?`<br><b>Obs.:</b> ${esc(i.note)}`:''}</div>`:''}</div><div class="qty"><button onclick="changeQty('${i.id}',-1)">−</button><b>${i.qty}</b><button onclick="changeQty('${i.id}',1)">+</button></div></div>`).join(''):'<p>Seu carrinho está vazio.</p>'}<div class="total">Total: ${money(total)}</div>${items.length?`<div class="form"><label>Seu nome</label><input id="customerName" placeholder="Digite seu nome"><label>Observação (opcional)</label><textarea id="note" rows="3" placeholder="Ex.: retirar no balcão, sem cebola..."></textarea></div><button class="wa" onclick="sendWhatsApp()">💬 Enviar pedido pelo WhatsApp</button>`:''}</div></div>`);
+}
+function closeModal(){document.getElementById('modal')?.remove()}
+function sendWhatsApp(){const name=document.getElementById('customerName').value.trim();if(!name){alert('Digite seu nome para enviar o pedido.');return}const note=document.getElementById('note').value.trim();const code='CF-'+String(Number(localStorage.getItem('cf_order_seq')||0)+1).padStart(3,'0'); localStorage.setItem('cf_order_seq',String(Number(localStorage.getItem('cf_order_seq')||0)+1));const items=Object.values(cart);const total=items.reduce((a,x)=>a+x.qty*x.price,0);let msg=`Olá, Castelinho Food! 👋%0A%0A*Pedido ${code}*%0A*Nome:* ${encodeURIComponent(name)}%0A%0A`;items.forEach(i=>{
+  msg+=`• ${i.qty}x ${encodeURIComponent(i.name)} — ${encodeURIComponent(money(i.qty*i.price))}%0A`;
+  if(i.customBox){
+    const detail=Object.entries(i.flavors||{}).map(([n,q])=>`${q}x ${n}`).join(', ');
+    msg+=`   Sabores: ${encodeURIComponent(detail)}%0A`;
+    if(i.note) msg+=`   Observação do box: ${encodeURIComponent(i.note)}%0A`;
+  }
+});msg+=`%0A*Total: ${encodeURIComponent(money(total))}*`;if(note)msg+=`%0A*Observação:* ${encodeURIComponent(note)}`;msg+=`%0A%0AEnviado pelo site Castelinho Food.`;localStorage.setItem('cf_last_order',JSON.stringify({code,name,items,total,note,at:new Date().toLocaleString('pt-BR')}));window.open('https://wa.me/'+WA+'?text='+msg,'_blank')}
+function showOwner(){renderOwnerAuth()}
+function renderOwnerAuth(){const owner=JSON.parse(localStorage.getItem('cf_owner')||'null');document.getElementById('app').innerHTML=`<div class="login-wrap"><div class="login"><div class="brand"><div class="logo">CF</div><div><h1>Área do dono</h1><small>Castelinho Food</small></div></div><div style="height:15px"></div>${owner?`<h2>Entrar</h2><p>Use o e-mail e a senha cadastrados.</p><div class="form"><label>E-mail</label><input id="loginEmail" type="email" placeholder="seu@email.com"><label>Senha</label><input id="loginPass" type="password" placeholder="Sua senha"></div><button class="primary" style="width:100%;margin-top:16px" onclick="loginOwner()">Entrar no painel</button><button class="secondary" style="width:100%;margin-top:8px" onclick="renderStore()">Voltar para o site</button>`:`<h2>Primeiro acesso</h2><p>O primeiro cadastro neste navegador será definido como dono.</p><div class="notice">⚠️ Esta versão funciona como protótipo local. Para colocar em produção com segurança, o cadastro/login precisa de um banco de dados e servidor.</div><div class="form"><label>E-mail</label><input id="regEmail" type="email" placeholder="seu@email.com"><label>Senha</label><input id="regPass" type="password" placeholder="Crie uma senha"><label>Confirme a senha</label><input id="regPass2" type="password" placeholder="Digite a senha novamente"></div><button class="primary" style="width:100%;margin-top:16px" onclick="registerOwner()">Criar conta do dono</button><button class="secondary" style="width:100%;margin-top:8px" onclick="renderStore()">Voltar para o site</button>`}</div></div>`}
+function registerOwner(){const e=document.getElementById('regEmail').value.trim().toLowerCase(),p=document.getElementById('regPass').value,p2=document.getElementById('regPass2').value;if(!e||!p){alert('Preencha e-mail e senha.');return}if(p!==p2){alert('As senhas não conferem.');return}localStorage.setItem('cf_owner',JSON.stringify({email:e,password:p}));sessionStorage.setItem('cf_admin','1');renderAdmin()}
+function loginOwner(){const o=JSON.parse(localStorage.getItem('cf_owner')||'null');const e=document.getElementById('loginEmail').value.trim().toLowerCase(),p=document.getElementById('loginPass').value;if(o&&e===o.email&&p===o.password){sessionStorage.setItem('cf_admin','1');renderAdmin()}else alert('E-mail ou senha incorretos.')}
+function renderAdmin(){if(sessionStorage.getItem('cf_admin')!=='1')return renderOwnerAuth();const last=JSON.parse(localStorage.getItem('cf_last_order')||'null');document.getElementById('app').innerHTML=`<div class="admin-shell"><div class="admin-head"><div><h1 style="margin:0">Painel do dono</h1><p style="margin:4px 0;color:#777">Gerencie o cardápio do Castelinho Food.</p></div><button class="secondary" onclick="logoutAdmin()">Sair</button></div><div class="stats"><div class="stat"><b>${products.length}</b><span>Itens cadastrados</span></div><div class="stat"><b>${products.filter(p=>p.active).length}</b><span>Disponíveis</span></div><div class="stat"><b>${products.filter(p=>!p.active).length}</b><span>Marcados como acabou</span></div></div><div class="admin-tabs" style="margin-top:16px"><button class="tab active" onclick="adminMenu()">🍽️ Cardápio</button><button class="tab" onclick="adminFlavors()">🥟 Sabores dos boxes</button><button class="tab" onclick="adminAdd()">＋ Adicionar item</button><button class="tab" onclick="adminInfo()">ℹ️ Como funciona</button></div><div id="adminContent"></div></div>`;adminMenu()}
+function adminMenu(){const cats=[...new Set(products.map(p=>p.cat))];document.getElementById('adminContent').innerHTML=`${cats.map(cat=>`<div class="panel"><h3>${esc(cat)}</h3>${products.filter(p=>p.cat===cat).map(p=>`<div class="admin-item"><div><b>${esc(p.name)}</b><div style="color:#777;font-size:14px">${money(p.price)} • ${p.active?'Disponível':'ACABOU'}</div><div style="color:#999;font-size:13px">${esc(p.desc)}</div></div><div class="admin-actions"><button class="mini ${p.active?'off':''}" onclick="toggleProduct(${p.id})">${p.active?'🔴 Marcar acabou':'🟢 Disponibilizar'}</button><button class="mini" onclick="adminEdit(${p.id})">Editar</button><button class="mini danger" onclick="deleteProduct(${p.id})">Excluir</button></div></div>`).join('')}</div>`).join('')}`}
+function adminFlavors(){
+  const available = availableSnackFlavors().length;
+  document.getElementById('adminContent').innerHTML = `
+    <div class="panel">
+      <h3>Sabores disponíveis nos boxes</h3>
+      <p style="color:#777;margin-top:-4px">Escolha quais sabores o cliente poderá selecionar nos boxes de salgadinhos.</p>
+      <div class="notice">Disponíveis agora: <b>${available}</b> de <b>${snackFlavors.length}</b> sabores.</div>
+      <div style="margin-top:12px">
+        ${snackFlavors.map(f => `
+          <div class="admin-item">
+            <div>
+              <b>${esc(f)}</b>
+              <div style="color:#777;font-size:13px">${snackFlavorAvailability[f] === true ? 'Aparece para o cliente' : 'Não aparece para o cliente'}</div>
+            </div>
+            <div class="admin-actions">
+              <button class="mini ${snackFlavorAvailability[f] === true ? 'off' : ''}" onclick='toggleFlavor(${JSON.stringify(f)})'>
+                ${snackFlavorAvailability[f] === true ? '🔴 Desativar' : '🟢 Disponibilizar'}
+              </button>
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>`;
+}
+function toggleFlavor(name){
+  const current = snackFlavorAvailability[name] === true;
+  snackFlavorAvailability[name] = current ? false : true;
+  saveSnackFlavorAvailability();
+  adminFlavors();
+}
+
+function adminAdd(){document.getElementById('adminContent').innerHTML=`<div class="panel"><h3>Adicionar item ao cardápio</h3>${itemForm()}</div>`}
+function itemForm(p={}){return `<div class="form"><label>Categoria</label><input id="fcat" value="${esc(p.cat||'Combos')}" placeholder="Ex.: Combos"><label>Nome do item</label><input id="fname" value="${esc(p.name||'')}" placeholder="Ex.: Box 40 salgadinhos"><label>Descrição / o que vem</label><textarea id="fdesc" rows="3" placeholder="Ex.: 40 salgados fritos tamanho festa">${esc(p.desc||'')}</textarea><label>Preço (R$)</label><input id="fprice" type="number" step="0.01" value="${p.price??''}" placeholder="39,99"><label>Imagem do produto</label><input id="fimageFile" type="file" accept="image/*" onchange="previewProductImage(this)"><input id="fimage" type="hidden" value="${esc(p.image||'')}"><div id="imagePreview" style="margin-top:8px">${p.image?`<img src="${esc(p.image)}" style="width:120px;height:90px;object-fit:cover;border-radius:10px">`:''}</div><label>Ícone (se não usar imagem)</label><input id="ficon" value="${esc(p.icon||'🥟')}" placeholder="🥟"></div><button class="primary" style="margin-top:16px" onclick="saveItem(${p.id||0})">Salvar item</button>`}
+function previewProductImage(input){const file=input.files&&input.files[0];if(!file)return;if(file.size>2*1024*1024){alert('Escolha uma imagem de até 2 MB.');input.value='';return}const r=new FileReader();r.onload=()=>{document.getElementById('fimage').value=r.result;document.getElementById('imagePreview').innerHTML=`<img src="${r.result}" style="width:120px;height:90px;object-fit:cover;border-radius:10px">`};r.readAsDataURL(file)}
+function saveItem(id){const cat=document.getElementById('fcat').value.trim(),name=document.getElementById('fname').value.trim(),desc=document.getElementById('fdesc').value.trim(),price=parseFloat(document.getElementById('fprice').value),icon=document.getElementById('ficon').value.trim()||'🥟',image=document.getElementById('fimage').value||'';if(!cat||!name||isNaN(price)){alert('Preencha categoria, nome e preço.');return}if(id){const p=products.find(x=>x.id===id);Object.assign(p,{cat,name,desc,price,icon,image})}else{products.push({id:Date.now(),cat,name,desc,price,icon,image,active:true})}save();renderAdmin();}
+function adminEdit(id){const p=products.find(x=>x.id===id);document.getElementById('adminContent').innerHTML=`<div class="panel"><h3>Editar item</h3>${itemForm(p)}<button class="secondary" style="margin-top:8px" onclick="adminMenu()">Cancelar</button></div>`}
+function toggleProduct(id){const p=products.find(x=>x.id===id);if(p){p.active=!p.active;save();renderAdmin()}}
+function deleteProduct(id){if(confirm('Excluir este item do cardápio?')){products=products.filter(p=>p.id!==id);delete cart[id];save();renderAdmin()}}
+function adminInfo(){document.getElementById('adminContent').innerHTML=`<div class="panel"><h3>Como o site funciona</h3><ul><li>O cliente escolhe os produtos e monta o pedido.</li><li>Antes de enviar, informa o nome e pode deixar uma observação.</li><li>O site gera automaticamente um código, como <b>CF-4821</b>.</li><li>Ao clicar em enviar, abre o WhatsApp <b>55 18 99632-9176</b> com nome, código, itens, quantidades e total.</li><li>No painel, o dono pode adicionar, editar e excluir produtos.</li><li>Quando um salgado acabar, clique em <b>Marcar acabou</b>. Ele some do site. Quando chegar novamente, clique em <b>Disponibilizar</b>.</li><li>Em <b>Sabores dos boxes</b>, o dono escolhe quais sabores ficam disponíveis para o cliente.</li></ul><div class="notice">Importante: esta versão é um protótipo em HTML/JavaScript e salva os dados no navegador. Para vários aparelhos e uma área administrativa realmente online, é necessário ligar o painel a um banco de dados/backend.</div></div>`}
+function logoutAdmin(){sessionStorage.removeItem('cf_admin');renderStore()}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+renderStore();
+</script>
+</body>
+</html>
